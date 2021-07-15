@@ -3,7 +3,7 @@
     --logo-height: 32px;
     --header-height: 64px;
     --space-between-links-in-header: 16px;
-    --img-with-books-padding: 32px 24px;
+    --img-with-books-padding: 0 24px;
     --img-with-books-width: 60%;
     --start-here-margin: 8px auto;
     --width-of-section-with-little-images-and-descriptions: 40%;
@@ -30,10 +30,16 @@
     --footer-text-margin: 16px 24px;
     --default-dark-font-color: rgba(85, 81, 81, 0.979);
     --default-light-font-color: rgb(129, 125, 125);
+    --first-section-background-color: rgb(209, 204, 204);
 }
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
 }
 header {
     height: var(--header-height);
@@ -41,6 +47,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .left_header {
     height: var(--logo-height);
@@ -64,14 +73,75 @@ header {
     height: var(--logo-height);
     justify-content: space-evenly;
     align-items: center;
+    flex-shrink: 0;
+    min-width: 280px;
 }
 .right_header a {
     font-size: 14px;
     color: var(--default-dark-font-color);
     text-decoration: none;
     transition: all 0.1s ease-in 0.1s;
+    text-align: center;
 }
 .right_header a:hover {
     color: black;
     font-size: 16px;
+}
+.first_section {
+    position: relative;
+    top: 64px;
+    height: 92vh;
+    width: 100%;
+    background-color: var(--first-section-background-color);
+}
+.offset {
+    position: relative;
+    top: 64px;
+}
+.section {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+}
+.bg_light_gray {
+    background-color: var(--first-section-background-color);
+}
+.bg_white {
+    background-color: white;
+}
+.big_img {
+    width: 60%;
+    height: auto;
+    padding: var(--img-with-books-padding);
+}
+.text_container {
+    margin-left: 32px;
+}
+.text_container h1 {
+    font-size: 32px;
+    color: var(--default-dark-font-color);
+}
+.text_container h2 {
+    font-size: 24px;
+    color: var(--default-dark-font-color);
+    margin: 24px 0;
+}
+.button {
+    width: 300px;
+    height: 33px;
+    background-color: var(--default-dark-font-color);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: all 0.1s ease-in 0.1s;
+}
+.button:hover {
+    transform: scale(1.1, 1.1);
+    background-color: black;
+    font-size: 18px;
+    filter: drop-shadow(0 0 10px rgb(15, 193, 206));
 }
