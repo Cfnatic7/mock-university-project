@@ -20,6 +20,12 @@
                 <a href = '#'>Our companies</a>
                 <a href = '#'>Sign in</a>
             </div>
+            <div class = 'mobile_header'>
+                <a href = '#'><img src = './capstone_colmar_assets/images/ic-logo.svg'></a>
+                <a href = '#'><img src = './capstone_colmar_assets/images/ic-on-campus.svg'></a>
+                <a href = '#'><img src = './capstone_colmar_assets/images/ic-online.svg'></a>
+                <a href = '#'><img src = './capstone_colmar_assets/images/ic-login.svg'></a>
+            </div>
         </header>
         <main class = 'offset'>
             <section class = 'offset_v2 section bg_light_gray flex_centering_vertically' id = 'first_section' style = 'height: auto'>
@@ -31,8 +37,8 @@
                 </div>
             </section>
             <section class = 'section bg_white offset_v2' style = 'height: auto' id = 'second_section'>
-                <img src = './capstone_colmar_assets/images/information-main.jpg' class = 'big_img' style = 'margin: 32px 0;'>
-                <div class = 'text_container_v2' style = 'width: 60%; height: auto;'>
+                <img src = './capstone_colmar_assets/images/information-main.jpg' class = 'big_img not_mobile' style = 'margin: 32px 0;'>
+                <div class = 'text_container_v2 not_mobile' style = 'width: 60%; height: auto;'>
                     <h2>It doesn't hurt to keep practicing</h2>
                     <p style = 'margin: 24px 0 32px 0;'>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,<br>
                     nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br>
@@ -43,7 +49,9 @@
                 <div class = 'little_images_section'>
                     <div class = 'flex_item' style = 'border-bottom: rgb(129, 125, 125) 1px solid'>
                         <img src = './capstone_colmar_assets/images/information-orientation.jpg'
-                        class = 'little_image'>
+                        class = 'little_image not_mobile'>
+                        <img src = './capstone_colmar_assets/images/information-orientation-mobile.jpg'
+                        class = 'mobile mobile_img'>
                         <div class = 'text_container'>
                             <h2>Orientation date</h2>
                             <h3 style = 'margin: 8px 0;'>Tue 10/11 & Wed 10/12: 8am-3pm</h3>
@@ -52,7 +60,9 @@
                     </div>
                     <div class = 'flex_item'>
                         <img src = './capstone_colmar_assets/images/information-campus.jpg'
-                        class = 'little_image'>
+                        class = 'little_image not_mobile'>
+                        <img src = './capstone_colmar_assets/images/information-campus-mobile.jpg'
+                        class = 'mobile mobile_img'>
                         <div class = 'text_container'>
                             <h2>Our campus</h2>
                             <h3 style = 'margin: 8px 0;'>Find which campus is close by you</h3>
@@ -61,7 +71,9 @@
                     </div>
                     <div class = 'flex_item bg_light_gray'>
                         <img src = './capstone_colmar_assets/images/information-guest-lecture.jpg'
-                        class = 'little_image'>
+                        class = 'little_image not_mobile'>
+                        <img src = './capstone_colmar_assets/images/information-guest-lecture-mobile.jpg'
+                        class = 'mobile mobile_img'>
                         <div class = 'text_container'>
                             <h2>Our guest lecture</h2>
                             <h3 style = 'margin: 8px 0;'>Join a keynote with Oliver Sack<br>
@@ -73,7 +85,7 @@
             </section>
             <section class = 'section offset_v2 bg_light_gray' id = 'third_section'>
                 <h1 style = 'padding: 32px 0; color: rgba(85, 81, 81, 0.979); text-align: center; font-size: 32px; font-family: Raleway, sans-serif;'>Start learning</h1>
-                <div class = 'grid'>
+                <div class = 'grid not_mobile'>
                     <div class = 'grid_item a bg_white'>
                     <img src = './capstone_colmar_assets/images/course-software.jpg'>
                     <h2 class = 'dark_gray padding_offset' style = 'font-weight: bolder;'>Software engineering</h2>
@@ -118,18 +130,26 @@
                         <a href = '#'><h3 class = 'light_gray lesser_padding_offset'>Marketing</h3></a>
                     </div>
                 </div>
+                <div class = 'mobile_grid'>
+                    <a href = '#' class = 'dark_gray bg_light_gray'><h2 >Software engineering</h2></a>
+                    <a href = '#' class = 'dark_gray bg_light_gray'><h2>Computer art</h2></a>
+                    <a href = '#' class = 'dark_gray bg_light_gray'><h2>Design</h2></a>
+                    <a href = '#' class = 'dark_gray bg_light_gray'><h2>Data</h2></a>
+                    <a href = '#' class = 'dark_gray bg_light_gray'><h2>Business</h2></a>
+                    <a href = '#' class = 'dark_gray bg_light_gray'><h2>Marketing</h2></a>
+                </div>
             </section>
             <section class = 'section bg_white offset_v2 thesis_exhibit' id = 'fourth_section'>
                 <h1 style = 'padding: 32px 0; color: rgba(85, 81, 81, 0.979); text-align: center; font-size: 32px; font-family: Raleway, sans-serif;'>Thesis exhibit</h1>
-                <video src = './capstone_colmar_assets/videos/thesis.mp4' controls class = 'big_img' style = 'margin-top: 32px'></video>
-                <div class = 'text_container_v2' style = 'width: 60%; height: auto;'>
+                <video src = './capstone_colmar_assets/videos/thesis.mp4' controls class = 'big_img'></video>
+                <div class = 'text_container_v2 not_mobile' style = 'width: 60%; height: auto;'>
                     <h2>Reimagine urban</h2>
                     <p style = 'margin: 24px 0 32px 0;'>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,<br>
                     nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br>
                     eget magna laoreet, efficitur dolor consequat, tristique ligula."
                     </p>
                 </div>
-                <div class = 'little_images_section_v2'>
+                <div class = 'little_images_section_v2 not_mobile'>
                     <a href = '#'><div class = 'flex_item  bg_light_gray'>
                         <img src = './capstone_colmar_assets/images/thesis-fisma.jpg'
                         class = 'little_image'>
@@ -151,7 +171,7 @@
         </main>
     <footer class = 'bg_white offset' id = 'footer'>
         <h5 class = 'light_gray' style = 'padding: 16px 24px;'>&copy 2016 Colmar Academy. All rights reserved</h5>
-        <div class = 'terms_and_privacy light_gray'>
+        <div class = 'terms_and_privacy light_gray not_mobile'>
             <a href = '#'><h5>Terms</h5></a>
             <a href = '#'><h5>Privacy</h5></a>
         </div>
