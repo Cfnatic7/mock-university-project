@@ -325,7 +325,7 @@ footer {
 .terms_and_privacy a:hover h5 {
     color: var(--default-dark-font-color);
 }
-@media only screen and (max-width: 1024px) and (min-width: 481px) {
+@media only screen and (max-width: 1024px) and (min-width: 551px) {
     #first_section {
         display: flex;
         flex-direction: column;
@@ -374,7 +374,7 @@ footer {
         margin: 5% 0;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
     #first_section {
         display: flex;
         flex-direction: column;
